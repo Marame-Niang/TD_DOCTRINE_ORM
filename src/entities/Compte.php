@@ -42,7 +42,7 @@ class Compte
     private $fraisOuv;
 
     /** 
-     * @ORM\Column(type="integer") 
+     * @ORM\Column(type="integer", nullable=true) 
      */
     private $remuneration;
  
@@ -130,7 +130,7 @@ class Compte
 
     public function setdateOuve($dateOuve)
     {
-        $this->dateOuv = $dateOuve;
+        $this->dateOuve = $dateOuve;
     }
 
     public function getFraisOuv()
