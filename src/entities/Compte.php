@@ -66,7 +66,7 @@ class Compte
      * @ORM\ManyToOne(targetEntity="Client", inversedBy="comptes")
      * @ORM\JoinColumn(name="client_id", referencedColumnName="id")
      */
-    private $matriculeClient;
+    private $id_Client;
 
     /**
      * Many compte have one entreprise. This is the owning side.
@@ -77,7 +77,7 @@ class Compte
 
     /**
      * Many compte have one typeCompte. This is the owning side.
-     * @ORM\ManyToOne(targetEntity="TypeCompte", inversedBy="comptes")
+     * @ORM\ManyToOne(targetEntity="TypeCompte", inversedBy="compte")
      * @ORM\JoinColumn(name="typeCompte_id", referencedColumnName="id")
      */
     private $typeCompte;
@@ -183,14 +183,14 @@ class Compte
         $this->remuneration = $remuneration;
     }
 
-    public function getMatriculeClient()
+    public function getId_Client()
     {
-        return $this->matriculeClient;
+        return $this->id_Client;
     }
 
-    public function setMatriculeClient($matriculeClient)
+    public function setId_Client($id_Client)
     {
-        $this->matriculeClient = $matriculeClient;
+        $this->id_Client = $id_Client;
     }
 
     public function getIdEtreprise()

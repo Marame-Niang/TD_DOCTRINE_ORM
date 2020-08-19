@@ -83,9 +83,9 @@ class Client
 
     /**
      * One client has many compte. This is the inverse side.
-     * @ORM\OneToMany(targetEntity="Compte", mappedBy="matriculeClient")
+     * @ORM\OneToMany(targetEntity="Compte", mappedBy="id_Client")
      */
-    private $comptes;
+    private $compte;
 
     public function __construct()
     {

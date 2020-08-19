@@ -9,19 +9,15 @@
     extract($_POST);
 
     $db = new M_Compte();
-    $mat = $db->codeAleatoire(8);
-    $numero =$db->codeAleatoire(8);
-    $solde = 0;
+    $solde = 5000;
     $rib = 1;
-    $dateOuve = $db->getDateNow();
-
     $compte = new Compte();
     
-
     if ($choix_client == "nouveau") {
         if ($choix_type_client == "physique") {
             if ($choixcompte == "simple") {
                 $client = new Client();
+                $mat = codeAleatoire(8);
                 $client-> setMat($mat);
                 $client-> setCni($cni);
                 $client-> setNom($nom);
@@ -36,6 +32,8 @@
                 $cli = $db->getClient($cl);
 
                 $compte = new Compte();
+                $rib = cleRip(9);
+                $numero = cleRip(8);
                 $compte -> setNumero($numero);
                 $compte -> setRib($rib);
                 $compte -> setSolde(50000);
@@ -44,12 +42,13 @@
                 $compte -> setRemuneration(10000);
                 $type = $db->getTypeCompte(1);
                 $compte -> setTypeCompte($type);
-                $compte -> setMatriculeClient($cli);
+                $compte -> setId_Client($cli);
 
                 $cl =$db->addCompte($compte);
 
             } elseif ($choixcompte == "courant") {
                 $client = new Client();
+                $mat = codeAleatoire(8);
                 $client-> setMat($mat);
                 $client->setCni($cni);
                 $client->setNom($nom);
@@ -70,6 +69,8 @@
                 $cli = $db->getClient($cl);
     
                 $compte = new Compte();
+                $rib = cleRip(9);
+                $numero = cleRip(8);
                 $compte -> setNumero($numero);
                 $compte -> setRib($rib);
                 $compte -> setSolde(50000);
@@ -77,11 +78,12 @@
                 $compte -> setAgios(10000);
                 $type = $db->getTypeCompte(2);
                 $compte -> setTypeCompte($type);
-                $compte -> setMatriculeClient($cli);
+                $compte -> setId_Client($cli);
     
                 $cl =$db->addCompte($compte);
             } else {
                 $client = new Client();
+                $mat = codeAleatoire(8);
                 $client-> setMat($mat);
                 $client->setCni($cni);
                 $client->setNom($nom);
@@ -94,10 +96,12 @@
 
                 $cl =$db->addClient($client);
                 $cli = $db->getClient($cl);
-                var_dump($client);
+                
                 
 
                 $compte = new Compte();
+                $rib = cleRip(9);
+                $numero = cleRip(8);
                 $compte -> setNumero($numero);
                 $compte -> setRib($rib);
                 $compte -> setSolde(50000);
@@ -108,10 +112,10 @@
                 $compte -> setDate_fin($date_fin);
                 $type = $db->getTypeCompte(3);
                 $compte -> setTypeCompte($type);
-                $compte -> setMatriculeClient($cli);
+                $compte -> setId_Client($cli);
 
                 $cl =$db->addCompte($compte);
-                var_dump($compte);
+                
             }
         } 
         else {
@@ -130,6 +134,8 @@
 
             if ($choixcompte == "simple") {
                 $compte = new Compte();
+                $rib = cleRip(9);
+                $numero = cleRip(8);
                 $compte -> setNumero($numero);
                 $compte -> setRib($rib);
                 $compte -> setSolde(50000);
@@ -144,6 +150,8 @@
             } 
             else {
                 $compte = new Compte();
+                $rib = cleRip(9);
+                $numero = cleRip(8);
                 $compte -> setNumero($numero);
                 $compte -> setRib($rib);
                 $compte -> setSolde(50000);
@@ -160,4 +168,28 @@
             }
         }
     }
+
+    function codeAleatoire($car)
+   {
+       $string = "";
+       $chaine = "2643789ABDCEFGHJKMNPRTUVW";
+       srand((double)microtime()*1000000);
+       for($i=0; $i<$car; $i++)
+       {
+           $string .= $chaine[rand()%strlen($chaine)];
+       }
+       return $string;
+   }
+
+    function cleRip($rip)
+   {
+       $string = "";
+       $chaine = "012643789";
+       srand((double)microtime()*1000000);
+       for($i=0; $i<$rip; $i++)
+       {
+           $string .= $chaine[rand()%strlen($chaine)];
+       }
+       return $string;
+   }
     

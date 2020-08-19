@@ -59,38 +59,8 @@
         }
 
 
-    public function getDateNow()
-    {
-        $tz_object = new \DateTimeZone('UTC');
-        $datetime = new \DateTime();
-        $datetime->setTimezone($tz_object);
-        return $datetime->format('Y\-m\-d');
-    }
 
-
-   public  function codeAleatoire($car)
-   {
-       $string = "";
-       $chaine = "2643789ABDCEFGHJKMNPRTUVW";
-       srand((double)microtime()*1000000);
-       for($i=0; $i<$car; $i++)
-       {
-           $string .= $chaine[rand()%strlen($chaine)];
-       }
-       return $string;
-   }
-
-   public function cleRip()
-   {
-       $string = "";
-       $chaine = "012643789";
-       srand((double)microtime()*1000000);
-       for($i=0; $i<2; $i++)
-       {
-           $string .= $chaine[rand()%strlen($chaine)];
-       }
-       return $string;
-   }
+   
 
 
     }

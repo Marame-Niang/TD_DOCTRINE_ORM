@@ -21,7 +21,7 @@ $conn = array(
     'user' => 'root',
     'password' => '',
     'host' => '127.0.0.1',
-    'driver' => 'pdo_mysql',
+    'driver' => 'pdo_mysql'
 );
 
 // obtaining the entity manager

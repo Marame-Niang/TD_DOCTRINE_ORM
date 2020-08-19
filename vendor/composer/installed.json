@@ -1,17 +1,17 @@
 [
     {
         "name": "doctrine/annotations",
-        "version": "1.10.3",
-        "version_normalized": "1.10.3.0",
+        "version": "1.10.4",
+        "version_normalized": "1.10.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/annotations.git",
-            "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d"
+            "reference": "bfe91e31984e2ba76df1c1339681770401ec262f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/annotations/zipball/5db60a4969eba0e0c197a19c077780aadbc43c5d",
-            "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d",
+            "url": "https://api.github.com/repos/doctrine/annotations/zipball/bfe91e31984e2ba76df1c1339681770401ec262f",
+            "reference": "bfe91e31984e2ba76df1c1339681770401ec262f",
             "shasum": ""
         },
         "require": {
@@ -21,9 +21,10 @@
         },
         "require-dev": {
             "doctrine/cache": "1.*",
-            "phpunit/phpunit": "^7.5"
+            "phpstan/phpstan": "^0.12.20",
+            "phpunit/phpunit": "^7.5 || ^9.1.5"
         },
-        "time": "2020-05-25T17:24:27+00:00",
+        "time": "2020-08-10T19:35:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -152,35 +153,21 @@
             "php",
             "redis",
             "xcache"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "doctrine/collections",
-        "version": "1.6.6",
-        "version_normalized": "1.6.6.0",
+        "version": "1.6.7",
+        "version_normalized": "1.6.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/collections.git",
-            "reference": "5f0470363ff042d0057006ae7acabc5d7b5252d5"
+            "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/collections/zipball/5f0470363ff042d0057006ae7acabc5d7b5252d5",
-            "reference": "5f0470363ff042d0057006ae7acabc5d7b5252d5",
+            "url": "https://api.github.com/repos/doctrine/collections/zipball/55f8b799269a1a472457bd1a41b4f379d4cfba4a",
+            "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a",
             "shasum": ""
         },
         "require": {
@@ -192,7 +179,7 @@
             "phpunit/phpunit": "^7.0",
             "vimeo/psalm": "^3.8.1"
         },
-        "time": "2020-06-22T19:14:02+00:00",
+        "time": "2020-07-27T17:53:49+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -233,20 +220,6 @@
             "collections",
             "iterators",
             "php"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcollections",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -325,20 +298,6 @@
             "common",
             "doctrine",
             "php"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcommon",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -435,39 +394,25 @@
             "sqlite",
             "sqlserver",
             "sqlsrv"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdbal",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "doctrine/event-manager",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/event-manager.git",
-            "reference": "629572819973f13486371cb611386eb17851e85c"
+            "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/event-manager/zipball/629572819973f13486371cb611386eb17851e85c",
-            "reference": "629572819973f13486371cb611386eb17851e85c",
+            "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
+            "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
             "shasum": ""
         },
         "require": {
-            "php": "^7.1"
+            "php": "^7.1 || ^8.0"
         },
         "conflict": {
             "doctrine/common": "<2.9@dev"
@@ -476,7 +421,7 @@
             "doctrine/coding-standard": "^6.0",
             "phpunit/phpunit": "^7.0"
         },
-        "time": "2019-11-10T09:48:07+00:00",
+        "time": "2020-05-29T18:28:51+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -607,20 +552,6 @@
             "strings",
             "uppercase",
             "words"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finflector",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -679,20 +610,6 @@
         "keywords": [
             "constructor",
             "instantiate"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -757,20 +674,6 @@
             "lexer",
             "parser",
             "php"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -861,20 +764,6 @@
         "keywords": [
             "database",
             "orm"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine/orm",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -961,20 +850,6 @@
             "odm",
             "orm",
             "persistence"
-        ],
-        "funding": [
-            {
-                "url": "https://www.doctrine-project.org/sponsorship.html",
-                "type": "custom"
-            },
-            {
-                "url": "https://www.patreon.com/phpdoctrine",
-                "type": "patreon"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fpersistence",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -1239,26 +1114,12 @@
             }
         ],
         "description": "Symfony Console Component",
-        "homepage": "https://symfony.com",
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
-        ]
+        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/polyfill-ctype",
-        "version": "v1.18.0",
-        "version_normalized": "1.18.0.0",
+        "version": "v1.18.1",
+        "version_normalized": "1.18.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1317,26 +1178,12 @@
             "ctype",
             "polyfill",
             "portable"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "symfony/polyfill-intl-grapheme",
-        "version": "v1.18.0",
-        "version_normalized": "1.18.0.0",
+        "version": "v1.18.1",
+        "version_normalized": "1.18.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -1397,26 +1244,12 @@
             "polyfill",
             "portable",
             "shim"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "symfony/polyfill-intl-normalizer",
-        "version": "v1.18.0",
-        "version_normalized": "1.18.0.0",
+        "version": "v1.18.1",
+        "version_normalized": "1.18.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -1480,26 +1313,12 @@
             "polyfill",
             "portable",
             "shim"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.18.0",
-        "version_normalized": "1.18.0.0",
+        "version": "v1.18.1",
+        "version_normalized": "1.18.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -1559,26 +1378,12 @@
             "polyfill",
             "portable",
             "shim"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "symfony/polyfill-php73",
-        "version": "v1.18.0",
-        "version_normalized": "1.18.0.0",
+        "version": "v1.18.1",
+        "version_normalized": "1.18.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php73.git",
@@ -1637,26 +1442,12 @@
             "polyfill",
             "portable",
             "shim"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
         "name": "symfony/polyfill-php80",
-        "version": "v1.18.0",
-        "version_normalized": "1.18.0.0",
+        "version": "v1.18.1",
+        "version_normalized": "1.18.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php80.git",
@@ -1719,20 +1510,6 @@
             "polyfill",
             "portable",
             "shim"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -1797,20 +1574,6 @@
             "interfaces",
             "interoperability",
             "standards"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
@@ -1884,20 +1647,6 @@
             "unicode",
             "utf-8",
             "utf8"
-        ],
-        "funding": [
-            {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-            },
-            {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-            },
-            {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-            }
         ]
     },
     {
